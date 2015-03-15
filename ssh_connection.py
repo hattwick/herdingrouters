@@ -20,6 +20,8 @@ class SSHConnection(object):
         self.net_device = net_device
         self.ip = net_device.ip_address
         
+        print "SSHConnection package reporting."
+        
         # We have passed in the device and saved local attributes
         
         if net_device.ssh_port:
