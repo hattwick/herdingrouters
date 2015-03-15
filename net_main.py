@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 
-# net_main.py program for inventory gathering
+# net_main.py example program for inventory gathering
 # Class 8 in Byers' Applied Python series
 
 from net_system.models import NetworkDevice, Credentials   #removed SnmpCredentials
