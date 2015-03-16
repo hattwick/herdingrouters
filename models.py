@@ -7,6 +7,16 @@ class Credentials(models.Model):
 
     def __unicode__(self):
         return u'%s' % (self.username)
+        
+class SnmpCredentials(models.Model):
+    version          = models.CharField(max_length=2)
+    username         = models.CharField(max_length=50)
+    auth_key         = models.CharField(max_length=50, blank=True, null=True)
+    encrypt_key      = models.CharField(max_length=50, blank=True, null=True)
+    description      = models.CharField(max_length=200, blank=True, null=True)
+
+    def __unicode__(self):
+        return u'%s' % (self.username)        
 
 class NetworkDevice(models.Model):
     device_name     = models.CharField(primary_key=True, max_length=80)
