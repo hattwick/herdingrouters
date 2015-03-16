@@ -1,5 +1,5 @@
 # ssh_connection.py
-# Byers Applied Python example with mistakes or additions by Phil
+# Byers Applied Python example with mistakes or additions by Phil (2015)
 
 import paramiko
 import time
