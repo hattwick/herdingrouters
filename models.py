@@ -1,3 +1,7 @@
+# Module with device characteristics for network monitoring project
+# Byers Applied Python course with errors by Phil (2015)
+
+
 from django.db import models
 
 class Credentials(models.Model):
