@@ -35,6 +35,9 @@ class NetworkDevice(models.Model):
     serial_number   = models.CharField(max_length=50, blank=True, null=True)
     uptime_seconds  = models.IntegerField(blank=True, null=True)
     credentials     = models.ForeignKey(Credentials, blank=True, null=True)
+    snmp_crentials  = models.ForeignKey(SnmpCredentials, blank=True, null=True)
+    snmp_port				= models.IntegerField(blank=True, null=True)
+    cfg_file        = models.CharField(max_length=100, blank=True, null=True)
 
     def __unicode__(self):
         return u'%s' % (self.device_name)
