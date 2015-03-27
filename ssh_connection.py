@@ -69,5 +69,3 @@ class SSHConnection(object):
         print
         print
         
-        
-        
