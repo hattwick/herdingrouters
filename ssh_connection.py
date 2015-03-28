@@ -68,4 +68,3 @@ class SSHConnection(object):
         print "."*80
         print
         print
-        
