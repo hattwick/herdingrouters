@@ -13,7 +13,7 @@ def gather_inventory():
     # connecting appropriately based on class and
     # looking through config
     
-    DEBUG = True
+    DEBUG = False
     
     net_devices = NetworkDevice.objects.all()
     
