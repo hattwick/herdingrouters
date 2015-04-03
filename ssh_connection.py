@@ -7,9 +7,8 @@ import time
 class SSHConnection(object):
     
 #   Using base ssh class to support Cisco
-#   and subclasses for other vendors
-    
-#   We want to
+#   and subclasses for other vendors.    
+#   We want to:
 #   - initialize with a network device object
 #   - obtain ssh credentials
 #   - establish our connection
