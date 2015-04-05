@@ -1,0 +1,28 @@
+import sys
+import os
+import time
+import sqlite3
+import pickle
+
+# Single test host
+hostname = "localhost" 
+
+# Connect to database
+dbconnect = sqlite3.connect('ping.db')
+
+with dbconnect:
+
+	cur = dbconnect.cursor()
+	cur.execute("CREATE TABLE IF NOT EXISTS Ping(id INTEGER PRIMARY KEY AUTOINCREMENT, time INTEGER, up INTEGER)")
+
+	#Ping host
+	response = os.system("ping -c 1 " + hostname)
+	time = int(time.time())
+
+	# Record result
+	if response == 0:
+		# Reachable
+		cur.execute("INSERT INTO Ping (`time`,`up`) VALUES(%d,1)" % time)
+	else:
+		# Unreachable
+		cur.execute("INSERT INTO Ping (`time`,`up`) VALUES(%d,0)" % time)
