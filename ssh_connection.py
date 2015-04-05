@@ -4,6 +4,7 @@
 import paramiko
 import time
 
+
 class SSHConnection(object):
     
 #   Using base ssh class to support Cisco
