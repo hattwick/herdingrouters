@@ -5,6 +5,7 @@ import paramiko
 import time
 
 
+
 class SSHConnection(object):
     
 #   Using base ssh class to support Cisco
@@ -15,6 +16,7 @@ class SSHConnection(object):
 #   - establish our connection
 #   - pass commands to eliminate LF and unwanted prompts
 #   - eventually enable and config
+#
     
     def __init__(self, net_device):
         self.net_device = net_device
