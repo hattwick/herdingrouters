@@ -3,6 +3,7 @@
 
 
 from django.db import models
+import math
 
 class Credentials(models.Model):
     username        = models.CharField(max_length=50)
