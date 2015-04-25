@@ -1,5 +1,6 @@
 # Module with device characteristics for network monitoring project
 # Byers Applied Python course with errors by Phil (2015)
+# Entries after NetworkDevice class are additional extensions
 
 
 from django.db import models
