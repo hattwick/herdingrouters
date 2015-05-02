@@ -2,6 +2,7 @@
 
 import boto
 import time
+import snmp
 
 def create_and_attach_volume(instance, volume_size, device_name):
     """
