@@ -15,7 +15,10 @@ def create_and_attach_volume(instance, volume_size, device_name):
     device_name The device name to which the new volume will be
                 referred to on the instance.
     """
+    
     ec2 = instance.connection
+    
+    
     # Determine the Availability Zone of the instance
     azone = instance.placement
     
