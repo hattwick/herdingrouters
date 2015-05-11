@@ -2,6 +2,7 @@
 # Byers Applied Python course with errors by Phil (2015)
 # Entries after NetworkDevice class are additional extensions
 
+import pysnmp
 
 from django.db import models
 
