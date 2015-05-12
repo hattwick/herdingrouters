@@ -3,6 +3,7 @@
 # Entries after NetworkDevice class are additional extensions
 
 import pysnmp
+import math
 
 from django.db import models
 
