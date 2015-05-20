@@ -1,0 +1,57 @@
+aws+python book setup
+
+server:herdingrouters phil$ pip install boto
+Collecting boto
+  Downloading boto-2.38.0-py2.py3-none-any.whl (1.3MB)
+    100% |################################| 1.3MB 695kB/s 
+Installing collected packages: boto
+
+Successfully installed boto-2.38.0
+server:herdingrouters phil$ pip install paramiko
+Collecting paramiko
+  Downloading paramiko-1.15.2-py2.py3-none-any.whl (165kB)
+    100% |################################| 167kB 1.3MB/s 
+Collecting ecdsa>=0.11 (from paramiko)
+  Downloading ecdsa-0.13-py2.py3-none-any.whl (86kB)
+    100% |################################| 90kB 3.9MB/s 
+Requirement already satisfied (use --upgrade to upgrade): pycrypto!=2.4,>=2.1 in /usr/local/lib/python2.7/site-packages (from paramiko)
+Installing collected packages: ecdsa, paramiko
+
+
+Successfully installed ecdsa-0.13 paramiko-1.15.2
+server:herdingrouters phil$ python3
+Python 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> boto.ec2.regions()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'boto' is not defined
+>>> import boot
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named 'boot'
+>>> import boto
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named 'boto'
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()
+server:herdingrouters phil$ python
+Python 2.7.9 (default, Jan  7 2015, 11:49:12) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.56)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import boto
+>>> boto.ec2.regions()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'module' object has no attribute 'ec2'
+>>> import boto.ec2
+>>> boto.ec2.regions()
+[RegionInfo:us-east-1, RegionInfo:cn-north-1, RegionInfo:ap-northeast-1, RegionInfo:eu-west-1, RegionInfo:ap-southeast-1, RegionInfo:ap-southeast-2, RegionInfo:us-west-2, RegionInfo:us-gov-west-1, RegionInfo:us-west-1, RegionInfo:eu-central-1, RegionInfo:sa-east-1]
+
+
+

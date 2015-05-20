@@ -2,6 +2,13 @@
 
 import boto
 
+#some basic environment checks
+
+import boto
+boto.set_stream_logger('paws')
+ec2 = boto.connect_ec2(debug=2)
+s3 = boto.connect_s3(debug=2)
+
 
 def create_and_attach_volume(instance, volume_size, device_name):
     """
