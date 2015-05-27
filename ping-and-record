@@ -1,4 +1,5 @@
 import sys
+import pysnmp
 import sqlite3
 
 # Single test host
