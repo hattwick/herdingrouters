@@ -2,7 +2,6 @@
 
 import boto
 import pysnmp
-import math
 
 #some basic environment checks
 
