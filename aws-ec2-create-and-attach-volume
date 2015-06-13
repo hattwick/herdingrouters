@@ -1,6 +1,7 @@
 # ec2 for AWS book example
 
 import boto
+import pysnmp
 
 #some basic environment checks
 
