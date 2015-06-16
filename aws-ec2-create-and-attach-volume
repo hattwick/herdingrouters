@@ -1,7 +1,7 @@
 # ec2 for AWS book example
 
 import boto
-
+import math
 
 #some basic environment checks
 
