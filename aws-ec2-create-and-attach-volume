@@ -40,5 +40,3 @@ def create_and_attach_volume(instance, volume_size, device_name):
     volume.attach(instance.id, device_name)
     return volume
     print('Volume attached\n')
-    
-    # end
