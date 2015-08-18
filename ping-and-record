@@ -1,7 +1,6 @@
 import sys
 import sqlite3
 
-
 # Single test host
 hostname = "localhost" 
 
