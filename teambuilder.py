@@ -24,6 +24,6 @@ for i in range(len(teammate)):
 # Sort the iterate again
 teammate.sort()
 for i in range(len(teammate)):
-   print ('Index ' + str(i) + ' in teammates list is: ' + teammate[i])
+   print ('Index ' + str(i) + ' in sorted teammates list is: ' + teammate[i])
 
 print('Done.')
