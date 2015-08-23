@@ -13,3 +13,7 @@ while True:
 
 
 # Print list when finished entering
+print('The team is:')
+for name in teammate:
+    print('  ' + name)
+
