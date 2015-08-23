@@ -2,6 +2,7 @@
 
 import boto
 import math
+import pdb
 
 #some basic environment checks
 
