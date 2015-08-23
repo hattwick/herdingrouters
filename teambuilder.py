@@ -17,3 +17,8 @@ print('The team is:')
 for name in teammate:
     print('  ' + name)
 
+# Iterate slightly differently
+for i in range(len(teammate)):
+   print ('Index ' + str(i) + ' in teammates list is: ' + teammate[i])
+
+print('Done.')
