@@ -26,4 +26,9 @@ teammate.sort()
 for i in range(len(teammate)):
    print ('Index ' + str(i) + ' in sorted teammates list is: ' + teammate[i])
 
+# Reverse the sort
+teammate.sort(reverse=True)
+for i in range(len(teammate)):
+   print ('Index ' + str(i) + ' in teammates Reverse Sort list is: ' + teammate[i])
+
 print('Done.')
