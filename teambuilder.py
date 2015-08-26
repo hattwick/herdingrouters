@@ -35,7 +35,7 @@ for i in range(len(teammate)):
 print('If there is someone you want to search for, Type the name here.  Enter nothing to finish without searching.')
 firstname = input()
 if name == '':
-	break
-print (spam.index(firstname))
+	   break
+else print (spam.index(firstname))
 
 print('Done.')
