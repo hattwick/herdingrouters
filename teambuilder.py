@@ -36,12 +36,11 @@ for i in range(len(teammate)):
    print ('Index ' + str(i) + ' in teammates Reverse Sort list is: ' + teammate[i])
    
 # Find index position of team member
-while True
+while True:
     print('If there is someone you want to search for, Type the name here.  Enter nothing to finish without searching.')
     firstname = input()
     if name == '':
-	      break
-    else 
-        print (spam.index(firstname))
+	      break 
+    print (teammate.index(firstname))
 
 print('Done.')
