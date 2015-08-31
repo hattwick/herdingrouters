@@ -1,6 +1,6 @@
 # create roster of team members
 
-import random, sys, os, math
+import random, sys, os, math, pytest
 
 
 
