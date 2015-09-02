@@ -3,7 +3,6 @@
 import random, sys, os, math
 
 
-
 # Initiate empty list
 teammate = []
 
