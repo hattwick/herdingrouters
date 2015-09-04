@@ -14,7 +14,6 @@ while True:
        break
     teammate = teammate + [name]
 
-
 # Print list when finished entering
 print('The team is:')
 for name in teammate:
