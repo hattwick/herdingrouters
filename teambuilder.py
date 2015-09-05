@@ -38,7 +38,7 @@ while True:
     print('If there is someone you want to search for, Type the name here.  Enter nothing to finish without searching.')
     firstname = input()
     if name == '':
-	      break 
+	      sys.exit() 
     print (teammate.index(firstname))
 
 print('Done.')
