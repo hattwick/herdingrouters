@@ -23,3 +23,5 @@ with dbconnect:
 	else:
 		# Unreachable
 		cur.execute("INSERT INTO Ping (`time`,`up`) VALUES(%d,0)" % time)
+		
+# End
